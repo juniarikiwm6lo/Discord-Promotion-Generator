@@ -1,11 +1,9 @@
 process.title = 'Discord Token Checker';
-
 const fs = require('fs');
 const path = require('path');
 const child_process = require('child_process');
 const https = require('https');
 const chalk = require('chalk');
-
 const tokens = fs.readFileSync('tokens.txt', 'utf-8').replace(/\r/gi, '').split('\n');
 
 let nitroTokens = [];
