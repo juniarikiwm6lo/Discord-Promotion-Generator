@@ -1,4 +1,4 @@
 @echo off
 call npm i
-node generator.js
+node checker.js
 pause
