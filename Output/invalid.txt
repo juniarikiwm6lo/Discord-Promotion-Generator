@@ -1,3 +1,0 @@
-token1
-token2
-tok..
