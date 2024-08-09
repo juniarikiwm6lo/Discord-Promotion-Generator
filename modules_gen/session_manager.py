@@ -1,4 +1,5 @@
-# modules_gen/session_manager.py
+
+
 import requests
 from requests.adapters import HTTPAdapter
 from urllib3.util.retry import Retry

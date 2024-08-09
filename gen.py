@@ -1,4 +1,5 @@
-# gen.py
+
+
 from modules_gen.promo_manager import PromoManager
 
 if __name__ == "__main__":
